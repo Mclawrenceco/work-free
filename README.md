@@ -1,2 +1,2 @@
 # Age-calculator-
-An app that calculates age.
+## [Try it out](https://mclawrenceco.github.io/Age-calculator-/ "Click me! 🙃")
