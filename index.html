@@ -4,53 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Age Calculator</title>
+    <title>Age and Birthday Calculator</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <form>
-      <h4>AGE CALCULATOR</h4>
-      <div class="block">
-        <label for="date" class="title">DATE</label>
-        <input
-          type="number"
-          name="date"
-          id="date"
-          placeholder="DD"
-          required
-          min="1"
-          max="31"
-        />
+    <div class="container">
+      <div class="calculator" id="age-calculator">
+        <form>
+          <h4>AGE CALCULATOR</h4>
+          <div class="block">
+            <label for="date" class="title">DATE</label>
+            <input
+              type="number"
+              name="date"
+              id="date"
+              placeholder="DD"
+              required
+              min="1"
+              max="31"
+            />
+          </div>
+          <div class="block">
+            <label for="month" class="title">MONTH</label>
+            <input
+              type="number"
+              name="month"
+              id="month"
+              placeholder="MM"
+              required
+              min="1"
+              max="12"
+            />
+          </div>
+          <div class="block">
+            <label for="year" class="title">YEAR</label>
+            <input
+              type="number"
+              name="year"
+              id="year"
+              placeholder="YYYY"
+              required
+              min="1900"
+              max="2100"
+            />
+          </div>
+          <div class="block">
+            <input type="button" name="submit" value="Submit" onclick="calculateAge()" />
+          </div>
+          <div id="age"></div>
+        </form>
       </div>
-      <div class="block">
-        <label for="month" class="title">MONTH</label>
-        <input
-          type="number"
-          name="month"
-          id="month"
-          placeholder="MM"
-          required
-          min="1"
-          max="12"
-        />
+      <div class="calculator" id="birthday-calculator">
+        <form>
+          <h4>BIRTHDAY CALCULATOR</h4>
+          <div class="block">
+            <label for="bday-date" class="title">DATE</label>
+            <input
+              type="number"
+              name="bday-date"
+              id="bday-date"
+              placeholder="DD"
+              required
+              min="1"
+              max="31"
+            />
+          </div>
+          <div class="block">
+            <label for="bday-month" class="title">MONTH</label>
+            <input
+              type="number"
+              name="bday-month"
+              id="bday-month"
+              placeholder="MM"
+              required
+              min="1"
+              max="12"
+            />
+          </div>
+          <div class="block">
+            <input type="button" name="submit" value="Submit" onclick="calculateBirthday()" />
+          </div>
+          <div id="birthday"></div>
+        </form>
       </div>
-      <div class="block">
-        <label for="year" class="title">YEAR</label>
-        <input
-          type="number"
-          name="year"
-          id="year"
-          placeholder="YYYY"
-          required
-          min="1900"
-          max="2100"
-        />
-      </div>
-      <div class="block">
-        <input type="button" name="submit" value="Submit" onclick="age()" />
-      </div>
-      <div id="age"></div>
-    </form>
+    </div>
     <script src="scripts/scripts.js"></script>
   </body>
 </html>
