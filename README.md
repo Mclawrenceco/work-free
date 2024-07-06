@@ -56,4 +56,4 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## Acknowledgments
 
 - This project uses the [Rubik](https://fonts.google.com/specimen/Rubik) font from Google Fonts.
-## [Try it out](https://mclawrenceco.github.io/Age-calculator-/ "Click me! 🙃")
+## [Try it out](https://mclawrenceco.github.io/work-free/ "Click me! 🙃")
