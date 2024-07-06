@@ -13,7 +13,7 @@ function age() {
   const y1 = parseInt(document.getElementById("year").value);
   
   if (isNaN(d1) || isNaN(m1) || isNaN(y1) || d1 <= 0 || m1 <= 0 || m1 > 12 || y1 < 0) {
-    document.getElementById("age").innerHTML = "Invalid Date";
+    alert("Invalid Date");
     return;
   }
   
@@ -36,5 +36,5 @@ function age() {
   const m = m2 - m1;
   const y = y2 - y1;
   
-  document.getElementById("age").innerHTML = `Your Age is ${y} Years ${m} Months ${d} Days`;
+  alert(`Your Age is ${y} Years ${m} Months ${d} Days`);
 }
