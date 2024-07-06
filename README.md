@@ -21,7 +21,7 @@ This project contains two calculators:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/age-birthday-calculator.git
+   git clone https://github.com/mclawrenceco/age-birthday-calculator.git
    ```
 
 2. Navigate to the project directory:
