@@ -1,57 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
 body {
-  font-family: Arial, sans-serif;
-}
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-.container {
-  width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
+      form {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
 
-.base {
-  margin-bottom: 20px;
-}
+      h4 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
-.enter {
-  text-align: center;
-  margin-bottom: 20px;
-}
+      .block {
+        margin-bottom: 15px;
+      }
 
-.block {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
+      .title {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
 
-label.title {
-  flex: 1;
-}
+      input[type="number"] {
+        width: calc(100% - 10px);
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
 
-input[type="number"] {
-  flex: 2;
-  padding: 5px;
-}
+      input[type="button"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
 
-input[type="button"] {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-}
+      input[type="button"]:hover {
+        background-color: #0056b3;
+      }
 
-input[type="button"]:hover {
-  background-color: #0056b3;
-}
+      #age {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
 
-#age {
-  text-align: center;
-  font-size: 1.2em;
-  margin-top: 20px;
-}
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+
+        form {
+          padding: 15px;
+        }
+      }
