@@ -36,5 +36,6 @@ function age() {
   const m = m2 - m1;
   const y = y2 - y1;
   
-  alert(`Your Age is ${y} Years ${m} Months ${d} Days`);
+  const ageString = `Your Age is ${y} Year${y !== 1 ? 's' : ''}, ${m} Month${m !== 1 ? 's' : ''}, and ${d} Day${d !== 1 ? 's' : ''}`;
+  alert(ageString);
 }
