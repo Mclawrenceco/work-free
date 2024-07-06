@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Age calculator</title>
+    <title>Age Calculator</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -15,39 +15,39 @@
             <h4>AGE CALCULATOR</h4>
           </div>
           <div class="block">
-            <p class="title">DATE</p>
+            <label for="date" class="title">DATE</label>
             <input
-              type="text"
+              type="number"
               name="date"
               id="date"
               placeholder="DD"
-              required="required"
-              minlength="1"
-              maxlength="2"
+              required
+              min="1"
+              max="31"
             />
           </div>
           <div class="block">
-            <p class="title">MONTH</p>
+            <label for="month" class="title">MONTH</label>
             <input
-              type="text"
+              type="number"
               name="month"
               id="month"
               placeholder="MM"
-              required="required"
-              minlength="1"
-              maxlength="2"
+              required
+              min="1"
+              max="12"
             />
           </div>
           <div class="block">
-            <p class="title">YEAR</p>
+            <label for="year" class="title">YEAR</label>
             <input
-              type="text"
+              type="number"
               name="year"
               id="year"
               placeholder="YYYY"
-              required="required"
-              minlength="4"
-              maxlength="4"
+              required
+              min="1900"
+              max="2100"
             />
           </div>
         </div>
@@ -60,5 +60,5 @@
       </form>
     </div>
     <script src="scripts/scripts.js"></script>
-
-  </body
+  </body>
+</html>
