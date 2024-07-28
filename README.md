@@ -26,7 +26,7 @@ This project contains two calculators:
 
 2. Navigate to the project directory:
    ```sh
-   cd age-birthday-calculator
+   cd work-free
    ```
 
 3. Open `index.html` in your preferred web browser.
@@ -46,8 +46,8 @@ This project contains two calculators:
 ### Files
 
 - `index.html`: The main HTML file containing the structure of the calculators.
-- `styles/styles.css`: The CSS file for styling the calculators.
-- `scripts/scripts.js`: The JavaScript file for handling the calculations.
+- `css/styles.css`: The CSS file for styling the calculators.
+- `js/scripts.js`: The JavaScript file for handling the calculations.
 
 ## Contributing
 
